@@ -1,0 +1,17 @@
+{
+  "name": "techstock-cli",
+  "version": "1.0.0",
+  "description": "The techstock module will allow developers to assess the approximate value of their current technical skills as a function of the number of jobs, salary, and location",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "John McSwain",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.15.0",
+    "inquirer": "^5.1.0"
+  }
+}
