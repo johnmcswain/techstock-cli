@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 'use strict';
 
+/*global require*/
+/*global process*/
+/*eslint no-undef: "error"*/
+
 var program = require('commander');
 
 program
@@ -10,4 +14,3 @@ program
     .option('-i, --input [optional]','optional user input')
     .option('-I, --another-input <required>','required user input')
     .parse(process.argv); // end with parse to parse through the input
-
