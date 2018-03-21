@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "description": "The techstock module will allow developers to assess the approximate value of their current technical skills as a function of the number of jobs, salary, and location",
   "main": "index.js",
+  "bin": {
+    "techstock": "./index.js"
+  },
   "scripts": {
-    "start": "node index.js",
-    "test": "./node_modules/.bin/eslint --ext .js ./"
+    "test": "npm run lint",
+    "lint": "./node_modules/.bin/eslint --ext .js ./"
   },
   "keywords": [],
-  "author": "John McSwain",
+  "author": "John McSwain <him@johnmcswain.com>",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.3.2",
     "commander": "^2.15.0",
-    "inquirer": "^5.1.0"
+    "inquirer": "^5.1.0",
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^4.19.0"
